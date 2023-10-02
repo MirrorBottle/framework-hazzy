@@ -12,9 +12,9 @@ module.exports = {
     themes: ["light", {
       hazzy: {
         "primary": "#19263f",
-        "secondary": "#375287",
-        "accent": "#4568ac",
-        "neutral": "#000000",
+        "secondary": "#283c63",
+        "accent": "#1970C3",
+        "neutral": "#151417",
         "base-100": "#FFFFFF",
         "info": "#1e40af",
         "success": "#15803d",
