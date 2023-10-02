@@ -33,7 +33,8 @@
                         <a href="#"
                             class="inline-block font-normal text-white transition hover:text-white sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pl-0 pr-6">Tentang</a>
                         <a href="#"
-                            class="inline-block font-normal text-white transition hover:text-white sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pl-0 pr-6">Fitur Lengkap</a>
+                            class="inline-block font-normal text-white transition hover:text-white sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pl-0 pr-6">Fitur
+                            Lengkap</a>
                         <a href="#"
                             class="inline-block font-normal text-white transition hover:text-white sm:pr-6 lg:pr-12 py-1.5 sm:py-2 pl-0 pr-6">Harga</a>
                         <a href="#"
