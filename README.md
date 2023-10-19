@@ -14,8 +14,16 @@
 </div>
 
 
+## Credentials
+Email: master@hazzy.id
+
+Password: 123123
 
 <!-- ABOUT THE PROJECT -->
 ## Screenshot
 
+### POSTTEST 1
 <img src="./public/assets/images/posttest1.png">
+
+### POSTTEST 2
+<img src="./public/assets/images/posttest2.png">

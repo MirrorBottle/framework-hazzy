@@ -2,7 +2,7 @@
     <div class="px-5 md:px-10">
         <div
             class="mx-auto grid w-full max-w-7xl auto-cols-auto grid-cols-[auto_max-content] items-center justify-stretch gap-[0px] lg:grid-cols-[176px_auto]">
-            <a href="https://www.flowspark.co/" target="_blank"
+            <a href="/"
                 class="relative float-left text-[#333333] max-[991px]:mr-auto max-[767px]:pl-0">
                 <img class="h-[30px]" src="{{ asset('assets/images/logo_white.png') }}" alt="">
             </a>
@@ -10,22 +10,22 @@
                 class="relative float-right flex place-content-between max-[991px]:ml-0 max-[991px]:mr-0 max-[991px]:hidden max-[991px]:bg-black max-[991px]:py-1 max-[991px]:text-left">
                 <div class="mx-auto flex items-start max-[991px]:flex-col lg:items-center">
                     <div class="relative z-[900] mx-auto inline-block text-left max-[991px]:w-full">&lt;</div>
-                    <a href="https://neo-saas.webflow.io/about"
+                    <a href="/"
                         class="px-5 py-2 text-white transition hover:text-accent max-[991px]:block md:px-10 lg:px-4">Beranda</a>
-                    <a href="https://neo-saas.webflow.io/about"
+                    <a href="/"
                         class="px-5 py-2 text-white transition hover:text-accent max-[991px]:block md:px-10 lg:px-4">Tentang</a>
-                    <a href="https://neo-saas.webflow.io/pricing"
+                    <a href="/"
                         class="px-5 py-2 text-white transition hover:text-accent max-[991px]:block md:px-10 lg:px-4">Fitur Lengkap</a>
-                    <a href="https://neo-saas.webflow.io/blog"
+                    <a href="/"
                         class="px-5 py-2 text-white transition hover:text-accent max-[991px]:block md:px-10 lg:px-4">Harga</a>
-                    <a href="https://build.flowspark.co/" target="_blank"
+                    <a href="/"
                         class="px-5 py-2 text-white transition hover:text-accent max-[991px]:block md:px-10 lg:px-4">Produk Lainnya</a>
                 </div>
                 <div
                     class="flex w-auto flex-none justify-start max-[991px]:mb-4 max-[991px]:ml-10 max-[991px]:mt-3 max-[767px]:ml-5 lg:w-50 lg:justify-end">
-                    <a href="https://build.flowspark.co/template" target="_blank"
+                    <a href="/login"
                         class="inline-block cursor-pointer rounded-lg border border-solid border-accent bg-accent px-5 py-3 mr-2 text-center font-bold text-white transition hover:border-secondary hover:bg-secondary">Daftar</a>
-                    <a href="https://build.flowspark.co/template" target="_blank"
+                    <a href="/register"
                         class="inline-block cursor-pointer rounded-lg border border-solid border-white bg-white px-5 py-3 text-center font-bold text-secondary transition hover:border-[#e6e6e6] hover:bg-[#e6e6e6]">Masuk</a>
                 </div>
             </nav>
