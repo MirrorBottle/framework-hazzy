@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
-
-use App\Models\Evaluation;
+namespace App\Http\Controllers\Admin;
+use App\Http\Controllers\Controller;
+use App\Models\ReportActivity;
 use Illuminate\Http\Request;
 
-class EvaluationController extends Controller
+class ReportActivityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class EvaluationController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Evaluation $evaluation)
+    public function show(ReportActivity $reportActivity)
     {
         //
     }
@@ -42,7 +42,7 @@ class EvaluationController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Evaluation $evaluation)
+    public function edit(ReportActivity $reportActivity)
     {
         //
     }
@@ -50,7 +50,7 @@ class EvaluationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Evaluation $evaluation)
+    public function update(Request $request, ReportActivity $reportActivity)
     {
         //
     }
@@ -58,7 +58,7 @@ class EvaluationController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Evaluation $evaluation)
+    public function destroy(ReportActivity $reportActivity)
     {
         //
     }

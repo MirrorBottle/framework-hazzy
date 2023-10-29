@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
-
-use App\Models\ReportActivity;
+namespace App\Http\Controllers\Admin;
+use App\Http\Controllers\Controller;
+use App\Models\TeamMember;
 use Illuminate\Http\Request;
 
-class ReportActivityController extends Controller
+class TeamMemberController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class ReportActivityController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ReportActivity $reportActivity)
+    public function show(TeamMember $teamMember)
     {
         //
     }
@@ -42,7 +42,7 @@ class ReportActivityController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ReportActivity $reportActivity)
+    public function edit(TeamMember $teamMember)
     {
         //
     }
@@ -50,7 +50,7 @@ class ReportActivityController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, ReportActivity $reportActivity)
+    public function update(Request $request, TeamMember $teamMember)
     {
         //
     }
@@ -58,7 +58,7 @@ class ReportActivityController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ReportActivity $reportActivity)
+    public function destroy(TeamMember $teamMember)
     {
         //
     }

@@ -1,21 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
-
-use App\Models\Company;
-use App\Models\Report;
+namespace App\Http\Controllers\Admin;
+use App\Http\Controllers\Controller;
 use App\Models\Team;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class TeamController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $reports = Report::all();
-        return view('admin.dashboard', compact('reports'));
+        //
     }
 
     /**
@@ -37,7 +34,7 @@ class DashboardController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Company $company)
+    public function show(Team $team)
     {
         //
     }
@@ -45,7 +42,7 @@ class DashboardController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Company $company)
+    public function edit(Team $team)
     {
         //
     }
@@ -53,7 +50,7 @@ class DashboardController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Company $company)
+    public function update(Request $request, Team $team)
     {
         //
     }
@@ -61,7 +58,7 @@ class DashboardController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Company $company)
+    public function destroy(Team $team)
     {
         //
     }
