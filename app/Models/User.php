@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -44,4 +46,27 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    // * RELATIONSHIP
+    public function teams() {
+        return $this->belongsToMany(Team::class, 'team_members');
+    }
+
+    // * ATTRIBUTES
+    public function getTeamAttribute() {
+        return $this->teams()->orderBy('id', 'desc')->first();
+    }
+    public function getRoleNameAttribute($value)
+    {
+        switch ($this->role) {
+            case '1':
+                return 'Master';
+            case '2':
+                return 'Admin';
+            case '3':
+                return 'PJO';
+            case '4':
+                return 'Pegawai';
+        }
+    }
 }

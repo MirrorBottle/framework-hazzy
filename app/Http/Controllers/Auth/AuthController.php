@@ -24,7 +24,7 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => $request->password,
         ];
-        if (Auth::attempt($data)) {
+        if (Auth::attempt($data, $request->has('remember'))) {
             return redirect('/dashboard');
         } else {
             session()->flash('error', 'Email atau Password anda salah!');
