@@ -36,7 +36,7 @@
                         Perusahaan</label>
                     <input type="text" name="company_name" id="company_name" class="form-input"
                         placeolder="Perusahaanku" required>
-                </div>h
+                </div>
                 <div>
                     <label for="company_address"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat</label>

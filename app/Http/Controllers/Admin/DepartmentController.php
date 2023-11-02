@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
+use App\Models\Company;
 use App\Models\Department;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class DepartmentController extends Controller
 {
@@ -12,7 +14,9 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        //
+        $departments = Department::where("company_id", auth()->user()->company_id)
+            ->paginate(10);
+        return view("admin.department.index", compact('departments'));
     }
 
     /**
@@ -20,7 +24,7 @@ class DepartmentController extends Controller
      */
     public function create()
     {
-        //
+        return view("admin.department.create");
     }
 
     /**
@@ -28,7 +32,8 @@ class DepartmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $department = Department::create($request->all());
+        return redirect()->route('departments.index')->with('success','Data departemen berhasil dibuat!');
     }
 
     /**
@@ -44,7 +49,7 @@ class DepartmentController extends Controller
      */
     public function edit(Department $department)
     {
-        //
+        return view("admin.department.edit", compact('department'));
     }
 
     /**
@@ -52,7 +57,9 @@ class DepartmentController extends Controller
      */
     public function update(Request $request, Department $department)
     {
-        //
+        $department->update($request->all());
+        return redirect()->route('departments.index')->with('success','Data departemen berhasil diubah!');
+
     }
 
     /**
@@ -60,6 +67,8 @@ class DepartmentController extends Controller
      */
     public function destroy(Department $department)
     {
-        //
+        $department->delete();
+        return redirect()->route('departments.index')->with('success','Data departemen berhasil dihapus!');
+
     }
 }

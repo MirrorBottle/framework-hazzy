@@ -68,7 +68,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($users as $user)
+                    @foreach ($users as $user)
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900">
                                 {{ $user->name }}
@@ -106,8 +106,7 @@
                                         <form action="{{ route('users.destroy', $user->id) }}" method="post">
                                             @method('DELETE')
                                             @csrf
-                                            <button type="submit"
-                                                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                                            <button type="submit" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
                                                 onclick="return confirm('Are you sure want to delete?')">
                                                 Hapus
                                             </button>
@@ -116,16 +115,7 @@
                                 </div>
                             </td>
                         </tr>
-                    @empty
-                        <tr>
-                            <th colspan="4">
-                                <div class="text-center mt-4">
-                                    <i class="fa-solid fa-inbox fa-3x"></i>
-                                    <h1 class="mb-4 text-xl leading-none tracking-tight text-gray mt-4">Tidak ada data</h1>
-                                </div>
-                            </th>
-                        </tr>
-                    @endforelse
+                    @endforeach
 
                 </tbody>
             </table>
