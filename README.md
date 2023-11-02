@@ -15,8 +15,7 @@
 
 
 ## Credentials
-Email: master@hazzy.id
-
+Email: admin1@gmail.com
 Password: 123123
 
 <!-- ABOUT THE PROJECT -->
@@ -27,3 +26,22 @@ Password: 123123
 
 ### POSTTEST 2
 <img src="./public/assets/images/posttest2.png">
+
+### POSTTEST 3
+
+#### LOGIN
+<img src="./public/assets/images/posttest3-1.png">
+
+#### REGISTER
+<img src="./public/assets/images/posttest3-2.png">
+
+#### USER READ
+<img src="./public/assets/images/posttest3-3.png">
+
+#### USER CREATE
+<img src="./public/assets/images/posttest3-4.png">
+
+#### USER EDIT
+<img src="./public/assets/images/posttest3-5.png">
+
+

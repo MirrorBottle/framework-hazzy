@@ -18,7 +18,7 @@
                     <div class="w-8 text-center">
                         <i class="fa-solid fa-users text-2xl text-{{ Request::is('users*') ? 'white' : 'secondary'}}"></i>
                     </div>
-                    <span class="ml-4">Pegawai</span>
+                    <span class="ml-4">Pengguna</span>
                 </a>
             </li>
             <li>
